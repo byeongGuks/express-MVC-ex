@@ -1,0 +1,14 @@
+extends ../layout.pug 
+
+block title 
+    | #{userInfo.username}
+
+block page_title 
+    | #{userInfo.username}'s Information
+
+block content
+    |  Writing name : #{userInfo.writingName}
+    br
+    |  Number of Post : #{userInfo.numPost}
+    br
+    |  Join Date : #{userInfo.dateJoined}

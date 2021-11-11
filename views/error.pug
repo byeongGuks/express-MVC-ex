@@ -1,0 +1,10 @@
+//-error code, error message
+//- todo : 메세지 이쁘게 보여주기
+
+extends layout.pug
+
+block title
+    | #{errorCode} #{errorMsg}
+
+block page_title
+    | ERROR: #{errorCode} #{errorMsg}

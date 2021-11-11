@@ -1,0 +1,11 @@
+extends ../layout.pug 
+
+block title 
+    | Aritlces
+
+block page_title 
+    | Article List
+
+block content
+    a(href='/articles/write') write article
+    | !{articleList}

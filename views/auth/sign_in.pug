@@ -1,0 +1,14 @@
+
+extends ../layout.pug 
+
+block title 
+    | Sign In Page 
+
+block page_title 
+    | Sign In
+
+block content
+    form(method="post")
+        input(type="text" placeholder="ID" name="username")
+        input(type="password" placeholder="PW" name="password")
+        button(type="submit") Sign In

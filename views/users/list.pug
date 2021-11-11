@@ -1,0 +1,14 @@
+extends ../layout.pug 
+
+block title 
+    | Members
+
+block page_title 
+    | Member List
+
+block content
+    h5.mt-4 Sort By !{sortBy}
+    a(href = "http://localhost:3001/users?sortBy=num_post") Number Of Posts
+    | &nbsp&nbsp&nbsp
+    a(href = "http://localhost:3001/users?sortBy=date_joined") Join Date
+    | !{userList}
