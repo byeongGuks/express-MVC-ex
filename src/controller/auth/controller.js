@@ -30,7 +30,6 @@ const postSignIn = async(req, res, next) => {
         req.session.save(() => {
             res.redirect('/');
         });
-        //return res.redirect('/');
     } catch(err) {
         return next(err);
     }

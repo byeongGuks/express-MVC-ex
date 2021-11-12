@@ -26,8 +26,9 @@ app.use(session({
 
 app.use('/', controller);
 
-//todo : app.use(errorhandler)
 app.use(function(err, req, res, next) {
+	res.write(`<script>alert('${err.message}')</script>`);
+	res.write("<script>window.location=\"http://localhost:3001/auth/sign_in\"</script>");
 	console.error(err);
 });
 
